@@ -62,3 +62,23 @@ p {
   --orange: #F29F28; 
 }
 
+.desktop-only,
+.desktop-only-flex {
+  display: none !important;
+}
+
+@media (min-width: 1024px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .desktop-only {
+    display: block !important; 
+  }
+  
+  .desktop-only-flex {
+    display: flex !important;
+  }
+}
