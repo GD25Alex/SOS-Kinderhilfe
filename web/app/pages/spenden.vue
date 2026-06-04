@@ -49,7 +49,7 @@ const spendenkonto = ref({
 .icon-container {
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 25px;
   padding-bottom: 12px;
