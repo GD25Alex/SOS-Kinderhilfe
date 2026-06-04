@@ -1,5 +1,5 @@
 <template>
-  <div class="header-wrapper">
+  <div class="header-wrapper container">
     <div class="image-container">
       <img src="/images/logo.png" alt="Unser Logo" class="logo" @click="navigateTo('/')" />
       <img v-if="!isDesktop" :src="`/images/symbols/${showMenu ? 'close' : 'menu'}.png`" class="menu"

@@ -23,12 +23,11 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1200px;
   min-height: 100vh;
 }
 
 .main-content {
   flex-grow: 1;
-  padding: 0 20px;
+  padding: 0;
 }
 </style>

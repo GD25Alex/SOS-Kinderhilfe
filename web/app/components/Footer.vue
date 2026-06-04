@@ -6,8 +6,8 @@
     </div>
 
     <div class="links">
-      <FooterLink size="small" @click="navigateTo('/impressum')">Impressum</FooterLink>
-      <FooterLink size="small" @click="navigateTo('/datenschutz')">Datenschutz</FooterLink>
+      <FooterLink size="medium" @click="navigateTo('/impressum')">Impressum</FooterLink>
+      <FooterLink size="medium" @click="navigateTo('/datenschutz')">Datenschutz</FooterLink>
       <p class="copyright">© 2026 SOS Wohnunglosenhilfe e.V.</p>
     </div>
   </div>
@@ -24,28 +24,29 @@ import FooterLink from './FooterLink.vue';
   align-items: center;
   justify-content: center;
   border-top: 5px solid var(--lightblue);
-  margin-top: 70px;
-  padding-bottom: 20px;
-  gap: 10px;
+  padding-top: 40px;
+  margin-top: 80px;
+  padding-bottom: 36px;
+  gap: 16px;
 }
 
 .content {
   display: flex;
-  gap: 20px;
+  gap: 36px;
   margin-top: 10px;
 }
 
 .links {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   align-items: center;
   text-align: center;
   margin-top: 15px;
 }
 
 .copyright {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 200;
   color: var(--gray);
   margin-top: 5px;
@@ -58,6 +59,17 @@ import FooterLink from './FooterLink.vue';
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 0;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px solid var(--lightblue);
+    padding-top: 40px;
+    padding-bottom: 36px;
+    gap: 36px;
   }
 
   .copyright {

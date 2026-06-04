@@ -1,6 +1,6 @@
 <template>
   <div class="stage-wrapper">
-    <img :src="`/images/${image}.png`" alt="Stage Hintergrund" class="logo" :style="{ top: top + 'px' }" />
+    <img :src="`/images/${image}.png`" alt="Stage Hintergrund" class="logo" :style="{ objectPosition: focusPoint }" />
     <div class="overlay"></div>
     <h1 class="stage-title" v-html="title"></h1>
     <div class="donation desktop-only-flex" @click="navigateTo('/spenden')">
@@ -20,9 +20,9 @@ const props = defineProps({
     type: String,
     default: 'image1'
   },
-  top: {
-    type: Number,
-    default: 0
+  focusPoint: {
+    type: String,
+    default: 'center center'
   }
 })
 </script>
@@ -30,13 +30,13 @@ const props = defineProps({
 <style scoped>
 .stage-wrapper {
   position: relative;
-  max-height: 35vh;
+  height: 45vh;
+  width: 100%;
   overflow: hidden;
   display: flex;
 }
 
 .logo {
-  position: relative;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -58,9 +58,12 @@ const props = defineProps({
   background-color: var(--black);
   text-transform: uppercase;
   bottom: 30%;
-  left: 12%;
+  left: 18%;
   margin: 0;
   padding: 4px 8px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 50px;
 }
 
 .donation {
@@ -86,10 +89,9 @@ const props = defineProps({
   position: absolute;
   margin: 0;
   line-height: 0.8;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 35px;
   text-transform: uppercase;
-
   transition: opacity 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 

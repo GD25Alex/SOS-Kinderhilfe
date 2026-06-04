@@ -1,14 +1,16 @@
 <template>
   <div class="card-wrapper">
     <div class="circle">
-      <img :src="`/images/symbols/${icon}.png`" class="icon" alt="Symbol" />
+      <img :src="imagePath" class="icon" alt="Symbol" />
     </div>
     <p class="title" v-html="title" />
   </div>
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue';
+
+const props = defineProps({
   icon: {
     type: String,
     default: "handshake"
@@ -18,6 +20,12 @@ defineProps({
     default: "Sie können <strong> Geld </strong> für Lebensmittel, Hygieneartikel oder Projekte spenden"
   }
 });
+
+const imagePath = computed(() => {
+  const hasExtension = props.icon.includes('.');
+  return `/images/symbols/${props.icon}${hasExtension ? '' : '.png'}`;
+});
+
 </script>
 
 <style scoped>
@@ -25,7 +33,7 @@ defineProps({
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 7px;
+  gap: 24px;
 }
 
 .circle {

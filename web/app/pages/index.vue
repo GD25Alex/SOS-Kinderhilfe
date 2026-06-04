@@ -1,25 +1,18 @@
 <template>
   <div>
     <Stage title="gemeinsam für <br/> neue perspektiven" image="image1" />
-    <h1>SOS Wohnungslosenhilfe e.V.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusamus placeat deserunt molestias porro eius
-      quidem unde, at neque delectus perspiciatis deleniti voluptatibus fuga praesentium? Quibusdam consequuntur rem,
-      itaque nihil sint placeat iste ducimus laudantium dolorem voluptatum rerum ipsum reiciendis nesciunt omnis
-      exercitationem! <strong>Aliquam mollitia itaque quas voluptates, </strong> laudantium ullam debitis eum tempore id
-      amet cum
-      blanditiis a at, quos rerum praesentium deleniti. Recusandae expedita nisi culpa voluptatibus. Illum, nesciunt
-      pariatur dolore quaerat possimus cum inventore quam nesciunt. Dignissimos deserunt dolorem reprehenderit assumenda
-      non, perspiciatis nisi. Inventore, maxime labore. Dolor tempora quo minima corrupti quisquam?
-    </p>
+    <div class="container">
+      <h1>SOS Wohnungslosenhilfe e.V.</h1>
+      <p>Wohnungslose Menschen geraten in eine Krise, in der nichts mehr geht. Ohne Wohnung keine Adresse, ohne Adresse kein Arbeitsvertrag, kein Bankkonto, keine Chance auf einen neuen Mietvertrag. Und Geldbörse und Dokumente sind anfällig für Diebstahl und Verlust. Oft ist die einzige Hoffnung der Antrag auf Sozialleistungen. Doch man braucht bereits etwas Geld, um überhaupt Leistungen beantragen zu können. Das Sozialamt hilft den Menschen, auch mit Bereitstellung einer Unterkunft, kann jedoch nicht alle Kosten übernehmen. Der Verein „SOS Wohnungslosenhilfe e.V.“ wird daher ergänzend überbrückend in Notlagen tätig und unterstützt die Teilhabe wohnungsloser Menschen am gesellschaftlichen Leben.
+      </p>
 
-    <CImage :cols="1" fit="contain" :images="[{ 'title': 'Team', 'image': 'team' }]" />
+      <CImage :cols="1" fit="contain" :images="[{ 'title': 'Team', 'image': 'team' }]" />
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusamus placeat deserunt molestias porro eius
-      quidem unde, at neque delectus perspiciatis deleniti voluptatibus fuga praesentium? Quibusdam consequuntur rem,
-      itaque nihil sint placeat iste ducimus laudantium dolorem voluptatum rerum ipsum reiciendis nesciunt omnis
-      exercitationem! <strong>Aliquam mollitia itaque quas voluptates, </strong> laudantium ullam debitis eum tempore id
-    </p>
-
+      <h2 class="ac-callout">Gemeinsam wachsen</h2>
+      <p>Um noch mehr Menschen helfen zu können, möchten wir unseren Verein weiter ausbauen.
+Dafür sind wir auf Unterstützung angewiesen - jede Hilfe zählt. Ob durch Engagement oder Spenden: Wir freuen uns über jede Form der Unterstützung.
+      </p>
+    </div>
   </div>
 </template>
 

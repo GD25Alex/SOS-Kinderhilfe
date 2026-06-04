@@ -1,35 +1,47 @@
 <template>
   <div>
     <Stage title="Hilfe, <br/> die Ankommt" image="image3" />
-    <h1>Spendenmöglichkeiten</h1>
-    <h2>Sie können immer helfen...</h2>
+    <div class="container">
+      <h1>Spendenmöglichkeiten</h1>
+      <h2 class="ac-callout">Sie können immer helfen...</h2>
 
-    <div class="icon-container">
-      <IconCard v-for="option in options" :icon="option.icon" :title="option.title" />
+      <div class="icon-container">
+        <IconCard v-for="option in options" :icon="option.icon" :title="option.title" />
+      </div>
+
+      <p>Unterstützen Sie als regionale Firma wohnungslose Menschen über Zuwendungen an den Verein im Rahmen von Sponsoring.
+      </p>
+
+      <h2 class="ac-callout">Sachspenden</h2>
+      <p>Sie möchten Sachspenden spenden und direkt helfen? Kontaktieren Sie uns bei Fragen gerne per E-Mail oder Telefon.</p>
+
+      <h2 class="ac-callout">Spendenkonto</h2>
+      <div>
+        <div v-for="(value, key) in spendenkonto" class="spenden-item">
+          <p class="title">{{ key }}:</p>
+          <p class="value">{{ value }}</p>
+        </div>
+      </div>
     </div>
-
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quasi quibusdam asperiores animi id
-      repudiandae distinctio dolorum quidem aliquid. Quibusdam.
-    </p>
-
-    <h3>Sachspenden</h3>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, voluptatem.</p>
-
-    <h3>Spendenkonto</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi labore a aspernatur nobis quis cumque facilis
-      pariatur, aperiam qui soluta.</p>
   </div>
-</template>
+  < </template>
 
 <script setup lang="ts">
 import IconCard from '~/components/IconCard.vue';
 
 const options = ref([
-  { 'title': 'Sie können <strong> Geld </strong> für Lebensmittel, Hygieneartikel oder Projekte spenden', 'icon': 'handshake' },
-  { 'title': 'Sie können <strong> Geld </strong> für Lebensmittel, Hygieneartikel oder Projekte spenden', 'icon': 'handshake' },
-  { 'title': 'Sie können <strong> Geld </strong> für Lebensmittel, Hygieneartikel oder Projekte spenden', 'icon': 'handshake' },
-  { 'title': 'Sie können <strong> Geld </strong> für Lebensmittel, Hygieneartikel oder Projekte spenden', 'icon': 'handshake' }
+  { 'title': 'Sie können <strong> Geld </strong> für Lebensmittel, Hygieneartikel oder Projekte spenden', 'icon': 'money.svg' },
+  { 'title': 'Stellen Sie gern auch <strong>Lebensmittel oder Hygieneartikel</strong> direkt zur Verfügung (auch kleine Mengen).', 'icon': 'hygiene.svg' },
+  { 'title': 'In begrenztem Unfang wird <strong>gut erhaltene Kleidung für Männer</strong> (insbesondere Unterwäsche und Socken) gebraucht.', 'icon': 'socks.svg' },
+  { 'title': 'Kontaktieren Sie uns gern, wenn Sie sich <strong>ehrenamtlich engangieren</strong> möchten.', 'icon': 'heart.svg' }
 ])
+
+const spendenkonto = ref({
+  "empfänger": "123",
+  "iban": "123",
+  "bic": "123",
+  "bank": "123"
+})
 
 </script>
 
@@ -53,5 +65,15 @@ const options = ref([
 .icon-container::-webkit-scrollbar-thumb {
   background-color: var(--lightblue);
   border-radius: 10px;
+}
+
+.spenden-item {
+  display: flex;
+  gap: 10px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 </style>

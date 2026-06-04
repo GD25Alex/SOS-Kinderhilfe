@@ -28,7 +28,7 @@ const buttonColor = computed(() => `var(--${props.color})`)
 .button-wrapper {
   --btn-color: v-bind(buttonColor);
 
-  border-radius: 7px;
+  border-radius: 16px;
   border: 1px solid var(--btn-color);
   background-color: var(--btn-color);
   color: white;

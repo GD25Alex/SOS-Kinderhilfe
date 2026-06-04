@@ -30,7 +30,7 @@ defineProps({
 }
 
 .medium {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .large {

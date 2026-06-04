@@ -1,35 +1,28 @@
 <template>
   <div>
     <Stage title="Um Unbürokratisch und <br/> unkompliziert helfen zu können" image="image2" />
-    <h1>Verein</h1>
-    <h2>"Um unbürokratisch und unkompliziert helfen zu können"</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci magni voluptate nihil tenetur commodi ipsum
-      voluptatum saepe tempora optio sunt, quam placeat neque? Delectus repudiandae doloremque maxime, velit corrupti
-      iure nobis quos exercitationem non minima, recusandae laudantium soluta qui distinctio inventore quia? Quod vitae
-      fugiat quos error ut non, corrupti beatae inventore at quia repellat odio unde? Quisquam vitae molestias
-      doloremque libero in, dolor veritatis enim expedita eos. Nobis deserunt obcaecati, assumenda, laborum est,
-      voluptates ex ullam eius facilis quae vel doloremque minus tempore accusamus animi aspernatur esse! Ab optio quos
-      totam et inventore modi unde possimus? Inventore, unde nihil?
-    </p>
+    <div class="container">
+      <h1>Verein</h1>
+      <p class="callout">"Um unbürokratisch und unkompliziert helfen zu können"</p>
+      <p>
+Wohnungslose Menschen geraten in eine Krise, in der nichts mehr geht: Ohne Wohnung keine Adresse, ohne Adresse kein Arbeitsvertrag, kein Bankkonto, keine Chance auf einen neuen Mietvertrag. Und Geldbörse und Dokumente sind anfällig für Diebstahl und Verlust. Oft ist die einzige Hoffnung der Antrag auf Bürgergeld. Doch man braucht bereits etwas Geld, um überhaupt Leistungen beantragen zu können. Das Sozialamt hilft den Menschen, finanziert jedoch nicht alles.
+      </p>
 
-    <CImage :cols="1" fit="contain" :images="[{ 'title': 'Team', 'image': 'team' }]" />
+      <CImage :cols="1" fit="contain" :images="[{ 'title': 'Team', 'image': 'team' }]" />
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi veritatis distinctio possimus aut ex incidunt
-      dolorem delectus a sint minima nemo dolorum, excepturi exercitationem illum ipsam eos at. Commodi, modi unde ab
-      veritatis harum a laborum tempora placeat voluptas consequuntur recusandae totam nulla tenetur expedita.
-      Repudiandae atque aspernatur deserunt ducimus.
-    </p>
+      <p>Um unkompliziert und unbürokratisch helfen zu können, hat sich im Jahr <strong>2025</strong> der Verein <strong>„SOS Wohnungslosenhilfe e.V."</strong> gegründet.
+<strong>Ziel des Vereins ist es, Spenden zu sammeln</strong> und wohnungslosen Menschen dabei zu helfen, nach Krisen wieder in ein selbstbestimmtes Leben zu starten, gesellschaftlichen Anschluss zu finden und sich wertvoll und gebraucht zu fühlen. Der Verein ist politisch und religiös unabhängig. Er verfolgt ausschließlich caritative Zwecke.
+      </p>
 
-    <h1>Mitglieder</h1>
-    <h2>Das sind wir!</h2>
-    <div class="people-container">
-      <PersonCard v-for="person in people" :person="person" />
+      <h1>Mitglieder</h1>
+      <h2>Das sind wir!</h2>
+      <div class="people-container">
+        <PersonCard v-for="person in people" :person="person" />
+      </div>
+
+      <h1>Unsere Satzung</h1>
+      <Link highlight @click="openSatzung()">Hier zur Satzung</Link>
     </div>
-
-    <h1>Unsere Satzung</h1>
-    <Link highlight @click="openSatzung()">Hier zur Satzung</Link>
-
-
   </div>
 </template>
 
@@ -57,6 +50,12 @@ const openSatzung = () => {
   margin: 15px 0px;
   width: 100%;
   height: auto;
+}
+
+.callout {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 20px;
 }
 
 .people-container {
