@@ -60,10 +60,10 @@ const props = defineProps({
   bottom: 30%;
   left: 18%;
   margin: 0;
-  padding: 4px 8px;
-  font-size: 35px;
+  padding: 4px 0px;
+  font-size: 2.8rem;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 0.9;
 }
 
 .donation {

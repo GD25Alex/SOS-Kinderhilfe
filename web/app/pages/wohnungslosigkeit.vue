@@ -5,7 +5,7 @@
       <h1>Wohnungslosigkeit</h1>
       <p> Ist es für Sie vorstellbar, ein. zwei. drei oder sogar <strong>zehn Jahre ohne Wohnung</strong> zu leben? Zunächst finden Sie vielleicht noch Unterschlupf bei Freunden oder Verwandten, doch im Laufe der Zeit wird Ihnen bewusst, dass Sie Ihre Mitmenschen stören. Und Sie machen sich auf den Weg...
         <br/><br/>
-        Menschen, die - häufig nach langer Odyssee - in einem Heim landen, haben um ihr Überleben gekämpft, sind erschöpft, aufgerieben und <strong>haben oft unglaubliche Geschichten erlebt</strong>. Wie Franzi, die in Papiercontainern schlief, um nicht zu erfrieren; Lothar, der verwitwete Lehrer, dessen Lager im Park war oder Oskar und andere <strong>Jugendliche</strong>, die nach Heimerziehung auf der Straße stehen und nicht wissen, wie und wo es weitergehen soll..
+        Menschen, die - häufig nach langer Odyssee - in einem Heim landen, haben um ihr Überleben gekämpft, sind erschöpft, aufgerieben und <strong>haben oft unglaubliche Geschichten erlebt</strong>. Wie Franzi, die in Papiercontainern schlief, um nicht zu erfrieren; Lothar, der verwitwete Lehrer, dessen Lager im Park war oder Oskar und andere <strong>Jugendliche</strong>, die nach Heimerziehung auf der Straße stehen und nicht wissen, wie und wo es weitergehen soll...
       </p>
 
       <CImage :images="images" />

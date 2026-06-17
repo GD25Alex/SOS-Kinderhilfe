@@ -4,7 +4,7 @@
       <img :src="`/images/people/${person.image}.png`" class="person" :alt="person.name" />
       <p class="hover-text">{{ person.text }}</p>
     </div>
-    <div>
+    <div class="people-text">
       <h3>{{ person.name }}</h3>
       <p>{{ person.role }}</p>
     </div>
@@ -71,4 +71,15 @@ const props = defineProps({
 .card-container:hover .person {
   transform: scale(1.05);
 }
+
+.people-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.people-text h3 {
+  margin: 0;
+}
+
 </style>

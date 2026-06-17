@@ -36,11 +36,12 @@ const options = ref([
   { 'title': 'Kontaktieren Sie uns gern, wenn Sie sich <strong>ehrenamtlich engangieren</strong> möchten.', 'icon': 'heart.svg' }
 ])
 
+
 const spendenkonto = ref({
-  "empfänger": "123",
-  "iban": "123",
-  "bic": "123",
-  "bank": "123"
+  "Inhaber": "SOS Wohnungslosenhilfe e.V.",
+  "IBAN": "DE17 8505 0300 0221 3413 82",
+  "BIC": "OSDDDE81XXX",
+  "BANK": "Ostsächsische Sparkasse Dresden"
 })
 
 </script>
@@ -76,4 +77,9 @@ const spendenkonto = ref({
   text-transform: uppercase;
   font-weight: 700;
 }
+
+.value {
+  font-weight: 700;
+}
+
 </style>

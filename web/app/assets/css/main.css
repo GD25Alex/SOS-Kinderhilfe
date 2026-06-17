@@ -10,7 +10,7 @@
 
 html, body {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   box-sizing: border-box;
   font-family: 'SofiaSansCondensed', sans-serif;
 }
@@ -18,10 +18,10 @@ html, body {
 .container {
   width: 100%;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 
 .page-title {
@@ -50,7 +50,10 @@ h2 {
 .ac-callout {
   text-transform: uppercase;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
+
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 p {
@@ -80,6 +83,10 @@ p {
 @media (min-width: 1024px) {
   .mobile-only {
     display: none !important;
+  }
+
+  .container {
+    margin: 0px;
   }
 }
 

@@ -15,7 +15,7 @@ Wohnungslose Menschen geraten in eine Krise, in der nichts mehr geht: Ohne Wohnu
       </p>
 
       <h1>Mitglieder</h1>
-      <h2>Das sind wir!</h2>
+      <h2 class="ac-callout">Das sind wir!</h2>
       <div class="people-container">
         <PersonCard v-for="person in people" :person="person" />
       </div>
@@ -61,6 +61,6 @@ const openSatzung = () => {
 .people-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 20px;
+  gap: 40px;
 }
 </style>

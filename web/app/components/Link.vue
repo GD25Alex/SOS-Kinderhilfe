@@ -49,8 +49,8 @@ defineProps({
 }
 
 .arrow {
-  width: 70px;
-  padding-bottom: 20px;
+  width: 55px;
+  padding-bottom: 16px;
 }
 
 .navigation {
@@ -98,6 +98,9 @@ defineProps({
 
 .highlight {
   background-color: var(--blue);
+  font-weight: 350;
+  font-size: 1.4rem;
+  line-height: 1;
   color: white;
 }
 
