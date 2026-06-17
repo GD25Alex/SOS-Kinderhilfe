@@ -61,9 +61,15 @@ const props = defineProps({
   left: 18%;
   margin: 0;
   padding: 4px 0px;
-  font-size: 2.8rem;
+  font-size: 2.0rem;
   font-weight: 700;
   line-height: 0.9;
+}
+
+@media (min-width: 1024px) {
+  .stage-title {
+    font-size: 2.8rem;
+  }
 }
 
 .donation {
